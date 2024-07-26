@@ -1,0 +1,48 @@
+/* styles.css */
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+}
+
+.content {
+    padding: 20px;
+    min-height: 100vh; /* Ensure content area fills viewport height */
+}
+
+.floating-menu {
+    position: fixed;
+    bottom: 20px; /* Distance from the bottom of the viewport */
+    left: 50%;
+    transform: translateX(-50%); /* Center the menu horizontally */
+    background-color: rgba(55, 65, 81, 0.4); /* Semi-transparent grey background */
+    border-radius: 16px; /* Rounded corners */
+    backdrop-filter: blur(10px); /* Background blur effect */
+    padding: 10px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.floating-menu ul {
+    display: flex;
+    justify-content: center;
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+}
+
+.floating-menu li {
+    margin: 0 10px; /* Space between items */
+}
+
+.floating-menu a {
+    text-decoration: none;
+    color: white; /* Text color */
+    font-weight: bold;
+    padding: 8px 16px;
+    border-radius: 4px;
+    transition: background-color 0.3s, color 0.3s;
+}
+
+.floating-menu a:hover {
+    background-color: #1d4ed8; /* Background color on hover */
+    color: white;
+}
